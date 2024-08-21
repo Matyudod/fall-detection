@@ -3,9 +3,9 @@ from mmaction.apis import inference_recognizer, init_recognizer
 from mmengine.runner import set_random_seed
 from mmengine import Config
 import os.path as osp
-import mmengine
 from mmengine.runner import Runner
-freeze_support()
+import torch, mmengine
+
 config = 'configs/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb.py'
 cfg = Config.fromfile(config)
 # Setup a checkpoint file to load

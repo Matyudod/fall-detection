@@ -2,6 +2,8 @@ opencv-python
 torch==2.4.0
 torchvision
 torchaudio
+mmaction2==1.0.0
+Cmake
 pillow
 wheel
 openmim
